@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: carparking          # Your service name (can be homesecurity if that's the folder name)
+    name: carparking      # Service name, can be "homesecurity" if you prefer
     env: python
     plan: free
     buildCommand: |
@@ -12,7 +12,9 @@ services:
     envVars:
       - key: SECRET_KEY
         sync: false
+        value: 'django-insecure-ke9y8snqw(0=p(it7ua4klbozv7dsq^zp2_i01iz_$hcj(4q02'
       - key: DEBUG
-        value: "False"
+        value: 'True'
       - key: PYTHON_VERSION
         value: "3.11.4"
+

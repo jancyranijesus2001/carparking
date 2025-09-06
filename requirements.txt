@@ -1,8 +1,10 @@
 django
 gunicorn
+whitenoise
+pytz
 pillow
 requests
-pytz
+
 
 
 

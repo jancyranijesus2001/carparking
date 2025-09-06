@@ -1,7 +1,9 @@
 Django==5.1.2
 gunicorn==21.2.0
 pytz
-sqlparse==1.8.0
+sqlparse
+requests
+
 
 
 

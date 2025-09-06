@@ -1,7 +1,8 @@
 Django==5.1.2
 gunicorn==21.2.0
-pytz==2025.7
+pytz
 sqlparse==1.8.0
+
 
 
 

@@ -28,3 +28,6 @@ urlpatterns = [
     path('sensor-data/', views.display_sensor_data, name='sensor-data'),
    
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

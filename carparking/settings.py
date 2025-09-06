@@ -120,6 +120,9 @@ STATIC_URL = '/static/'
 # Where Django will collect all static files (important for Render/production)
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Enable compressed static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -128,5 +131,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 

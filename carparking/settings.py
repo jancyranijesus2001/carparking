@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ke9y8snqw(0=p(it7ua4klbozv7dsq^zp2_i01iz_$hcj(4q02
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -114,21 +114,13 @@ USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # or the path to your static folder
-]
 
+# Where Django will collect all static files (important for Render/production)
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
-# Media files (user uploads)
-
-MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

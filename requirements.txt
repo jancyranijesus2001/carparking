@@ -1,9 +1,8 @@
-django
-gunicorn
-whitenoise
-pytz
-pillow
-requests
+Django==5.1.2
+gunicorn==21.2.0
+pytz==2025.7
+sqlparse==1.8.0
+
 
 
 

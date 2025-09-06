@@ -3,7 +3,8 @@ gunicorn==21.2.0
 pytz
 sqlparse
 requests
-whitenoise
+whitenoise==6.5.0
+
 
 
 
